@@ -6,8 +6,8 @@ import my_lib
 class TestMyLib(unittest.TestCase):
 
     def test_addthree(self):
-        self.assertEqual(my_lib.add_three(0), 3)        
-        self.assertEqual(my_lib.add_three(-3), 0)
+        self.assertEqual(my_lib.add_three(0), 3)
+        self.assertEqual(my_lib.add_three(-3), 1)
         self.assertEqual(my_lib.add_three(-sys.maxint), -sys.maxint + 3)
        #self.assertEqual(my_lib.add_three(sys.maxint), sys.maxint + 3)
 
