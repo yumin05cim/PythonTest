@@ -7,7 +7,7 @@ class TestMyLib(unittest.TestCase):
 
     def test_addthree(self):
         self.assertEqual(my_lib.add_three(0), 3)
-        self.assertEqual(my_lib.add_three(-3), 1)
+        self.assertEqual(my_lib.add_three(-3), 0)
         self.assertEqual(my_lib.add_three(-sys.maxint), -sys.maxint + 3)
        #self.assertEqual(my_lib.add_three(sys.maxint), sys.maxint + 3)
 
@@ -16,7 +16,7 @@ class TestMyLib(unittest.TestCase):
 
     def test_addtwelve(self):
         self.assertEqual(my_lib.add_twelve(0), 12)
-        return 
+        return
 
 
 if __name__ == '__main__':
